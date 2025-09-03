@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-blue: #0ff;
+  --color-neon-purple: #b03fff;
+  --color-neon-pink: #ff0099;
+  --color-neon-green: #00ff9f;
+
+  --shadow-neon-blue: 0 0 8px #0ff, 0 0 20px #0ff;
+  --shadow-neon-purple: 0 0 8px #b03fff, 0 0 20px #b03fff;
+
+  --animation-pulse-ring: pulseRing 1.5s infinite;  /* If you need custom keyframes, see below */
+}
+
+@font-face {
+  font-family: font1;
+  src: url(/fonts/Lausanne-300.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(/fonts/Lausanne-500.woff2);
+}
+
+body {
+  background-color: #111;
+  font-family: font1, Arial, sans-serif;
+}
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.7);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
