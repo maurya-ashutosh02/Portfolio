@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import Navbar from "./components/navigation/navbar";
+import Navbar from "./components/navigation/Navbar";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 const App = () => {
