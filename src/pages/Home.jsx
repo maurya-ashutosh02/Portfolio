@@ -146,7 +146,7 @@ const Home = () => {
               <img
                 ref={imageRef}
                 className="h-full w-full object-cover"
-                src="https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg"
+                src={image6}
                 alt="Profile Scroll Animation"
               />
             </div>
